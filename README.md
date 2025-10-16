@@ -1,3 +1,48 @@
+### **Step 9 – Open Your Project Locally**
+
+To view your project in a web browser, follow these steps:
+1. Open Visual Studio Code.
+2. Navigate to your project folder.
+3. Right-click on `index.html` and select "Open with Live Server" or open it directly in your browser.
+
+Quick Start (Windows PowerShell):
+
+```powershell
+# from the project root open the main page in your default browser
+Start-Process index.html
+```
+
+If you received a motorcycle image as an attachment and want it shown on the homepage, run this (adjust the source filename):
+
+```powershell
+# copy the image from your Downloads to the repo images folder and name it motorcycle-real.png
+Copy-Item -Path "$env:USERPROFILE\Downloads\<your-file-name>.png" -Destination "$(Resolve-Path .)\images\motorcycle-real.png"
+```
+
+Optimizing images (optional)
+
+If you have ImageMagick installed, generate optimized PNG and WebP sizes used by the site with these commands (run from the repo root):
+
+```powershell
+# 800px wide optimized PNG and WebP
+magick convert images\motorcycle-real.png -resize 800 -quality 85 images\motorcycle-real-800.png
+magick convert images\motorcycle-real.png -resize 800 -quality 80 images\motorcycle-real-800.webp
+
+# 400px wide optimized PNG and WebP
+magick convert images\motorcycle-real.png -resize 400 -quality 85 images\motorcycle-real-400.png
+magick convert images\motorcycle-real.png -resize 400 -quality 80 images\motorcycle-real-400.webp
+
+# larger size for featured view (1200px)
+magick convert images\motorcycle-real.png -resize 1200 -quality 85 images\motorcycle-real-1200.png
+magick convert images\motorcycle-real.png -resize 1200 -quality 80 images\motorcycle-real-1200.webp
+```
+
+Files added in this demo:
+- `index.html` — home page with links to Cars and Motorcycles pages
+- `cars.html` — short page about cars
+- `motorcycles.html` — short page about motorcycles
+- `css/styles.css` — styling for the site
+- `images/README.txt` — placeholder instructions for adding images
 # 🧪 Lab 1: Building a Responsive Website with AI
 
 **Duration:** 2 hours 30 minutes  

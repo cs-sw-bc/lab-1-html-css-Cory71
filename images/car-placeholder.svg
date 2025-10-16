@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Car placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#22313a" />
+      <stop offset="1" stop-color="#1b2b33" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#0b1215" />
+  <g transform="translate(60,120) scale(1.1)">
+    <rect x="0" y="60" rx="20" ry="20" width="620" height="120" fill="url(#g)" stroke="#2d8c9a" stroke-width="3" opacity="0.95"/>
+    <rect x="60" y="20" rx="18" ry="18" width="420" height="80" fill="#13282c" stroke="#2d8c9a" stroke-width="2"/>
+    <circle cx="150" cy="200" r="30" fill="#0a1b1f" stroke="#2b6b73" stroke-width="4"/>
+    <circle cx="470" cy="200" r="30" fill="#0a1b1f" stroke="#2b6b73" stroke-width="4"/>
+    <rect x="10" y="40" width="600" height="160" fill="none"/>
+    <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#cfeff3">Car placeholder</text>
+  </g>
+</svg>
