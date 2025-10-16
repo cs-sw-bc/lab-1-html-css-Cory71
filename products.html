@@ -29,7 +29,7 @@
           <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
         <div class="col">
           <div class="card product-card h-100">
-            <img src="images/car-placeholder.svg" class="card-img-top" alt="Cars" />
+            <img src="images/jag.png" class="card-img-top img-fluid" alt="Cars" />
             <div class="card-body">
               <h5 class="card-title">Cars</h5>
               <p class="card-text">Short guides and comparison tables for popular cars — compact, SUVs, and performance models.</p>
@@ -42,8 +42,9 @@
           <div class="card product-card h-100">
             <!-- responsive motorcycle image: webp preferred, png fallback -->
             <picture>
+              <source type="image/avif" srcset="images/bmw.avif" />
               <source type="image/webp" srcset="images/motorcycle-real-800.webp 800w, images/motorcycle-real-400.webp 400w" />
-              <img src="images/motorcycle-real.png" srcset="images/motorcycle-real-800.png 800w, images/motorcycle-real-400.png 400w" class="card-img-top" alt="Motorcycles" loading="lazy" onerror="this.onerror=null;this.src='images/Sportster.png'" />
+              <img src="images/bmw.avif" srcset="images/motorcycle-real-800.png 800w, images/motorcycle-real-400.png 400w" class="card-img-top img-fluid" alt="Motorcycles" loading="lazy" onerror="this.onerror=null;this.src='images/Sportster.png'" />
             </picture>
             <div class="card-body">
               <h5 class="card-title">Motorcycles</h5>
